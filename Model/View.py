@@ -1,13 +1,31 @@
 from tkinter import *
 from utils import *
+
 root = Tk()
 
-root.configure()
-root.title('Basketball')
+variable = StringVar(root)
+variable.set("Pick a Team")  # default value
 
-#label1 =Label(root, text=df1, padx=10, pady=10, bg='blue', fg='#ebd534')
-#label1.pack()
+teams = OptionMenu(root, variable, "ATL", "BKN", "BOS", "CHA", "CHI", "CLE", "DAL",
+                   "DEN", "DET", "GSW", "HOU", "IND", "LAC", "LAL", "MEM", "MIA",
+                   "MIL", "MIN", "NOP", "NYK", "OKC", "ORL", "PHI", "PHX", "POR",
+                   "SAC", "SAS", "TOR", "UTA", "WAS")
+teams.pack()
 
-#print(df1['PER'][0])
 
-root.mainloop()
+def ok():
+    print("value is: " + variable.get())
+
+
+def button_click():
+    if variable.get() == "ATL":
+        variable1 = StringVar(root)
+        variable1.set("Pick a Player")  # default value
+        playersATL = OptionMenu(root, variable1, "DeAndre' Bembry", "Charles Brown Jr.")
+        playersATL.pack()
+
+
+button = Button(root, text="OK", command=button_click)
+button.pack()
+
+mainloop()

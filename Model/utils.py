@@ -61,7 +61,7 @@ def get_player_salary (name): # retrieve player salary from 2019-2020 season
         return cleanHtml(str(salaries[1]))
       # test  print(cleanHtml(str(salaries[1])))
 
-print(get_player_salary('Lebron James'))
+print(get_player_salary('Lebron James').replace(',','').replace('$',''))
 print(get_player_per())
 '''
 class TestApp(Frame):
