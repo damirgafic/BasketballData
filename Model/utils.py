@@ -61,8 +61,27 @@ def get_player_salary (name): # retrieve player salary from 2019-2020 season
         return cleanHtml(str(salaries[1]))
       # test  print(cleanHtml(str(salaries[1])))
 
-print(get_player_salary('Lebron James').replace(',','').replace('$',''))
-print(get_player_per())
+def get_team_roster(team): # team variable uses team acronyms ex: GSW, LAL, etc.
+    r = get(f'https://www.basketball-reference.com/teams/{team}/2020.html')
+    print(f'https://www.basketball-reference.com/teams/{team}/2020.html')
+    if r.status_code == 200:
+        soup = BeautifulSoup(r.content, 'html.parser')
+        #print(soup)
+        table_div = soup.find('div', {'id': 'all_advanced'})
+        #print(table_div)
+        player_names = table_div.findAll('tbody')
+
+        player_names = (cleanHtml(str(player_names)))
+        player_names = re.sub(r'[\[\]0-9.-]+', '', player_names)
+        names = player_names.splitlines()
+        names.pop(0) # removes first element which is a blank element
+        print(names)
+       # print(player_names)
+
+
+#print(get_player_salary('Lebron James').replace(',','').replace('$',''))
+#print(get_player_per())
+print(get_team_roster('LAL'))
 '''
 class TestApp(Frame):
     """Basic test frame for the table"""

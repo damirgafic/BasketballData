@@ -17,11 +17,12 @@ def ok():
     print("value is: " + variable.get())
 
 
-def button_click():
+def button_click(): # Manually inputting just to test
     if variable.get() == "ATL":
         variable1 = StringVar(root)
         variable1.set("Pick a Player")  # default value
-        playersATL = OptionMenu(root, variable1, "DeAndre' Bembry", "Charles Brown Jr.")
+        playersATL = OptionMenu(root, variable1, "DeAndre' Bembry", "Charles Brown Jr.", "Clint Capela",
+                                "Vince Carter")
         playersATL.pack()
 
 
