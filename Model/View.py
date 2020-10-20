@@ -1,6 +1,8 @@
 from tkinter import *
 from utils import *
 
+from Model.utils import get_team_roster
+
 root = Tk()
 
 variable = StringVar(root)
@@ -17,13 +19,17 @@ def ok():
     print("value is: " + variable.get())
 
 
-def button_click(): # Manually inputting just to test
-    if variable.get() == "ATL":
-        variable1 = StringVar(root)
-        variable1.set("Pick a Player")  # default value
-        playersATL = OptionMenu(root, variable1, "DeAndre' Bembry", "Charles Brown Jr.", "Clint Capela",
-                                "Vince Carter")
-        playersATL.pack()
+def print_it(event):
+    print(var.get())
+
+
+def button_click():  # Manually inputting just to test
+    players = get_team_roster(variable.get())
+    variable1 = StringVar(root)
+    variable1.set("Pick a Player")  # default value
+    # playersATL = OptionMenu(root, variable1, *players, command=print_it())
+    playersMenu = OptionMenu(*(root, variable1) + tuple(players))
+    playersMenu.pack()
 
 
 button = Button(root, text="OK", command=button_click)
