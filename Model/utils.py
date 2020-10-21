@@ -21,16 +21,6 @@ def get_player_per(name):
         currentPer = (len(per)-2)
         return cleanHtml(str(per[currentPer]))
 
-       # currentPER = (len(per)-50)
-        #currentPER = (cleanHtml(str(per[currentPER])))
-        #return currentPER
-
-
-
-
-
-
-
 def get_player_salary (name): # retrieve player salary from 2019-2020 season
     suffix = get_player_suffix(name)
    # print(suffix.replace('/', '%2F'))
@@ -63,7 +53,7 @@ def get_team_roster(team): # team variable uses team acronyms ex: GSW, LAL, etc.
 
 
 #print(get_player_salary('Lebron James').replace(',','').replace('$',''))
-print(get_player_per('Stephen Curry'))
+#print(get_player_per('Stephen Curry'))
 #print(get_team_roster('LAL'))
 '''
 class TestApp(Frame):
