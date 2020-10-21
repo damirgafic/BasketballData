@@ -1,28 +1,22 @@
 from tkinter import *
 from utils import *
 
-from Model.utils import get_team_roster
+from Model.utils import get_team_roster, teamArray
 
 root = Tk()
 
 variable = StringVar(root)
 variable.set("Pick a Team")  # default value
 
-teams = OptionMenu(root, variable, "ATL", "BKN", "BOS", "CHA", "CHI", "CLE", "DAL",
-                   "DEN", "DET", "GSW", "HOU", "IND", "LAC", "LAL", "MEM", "MIA",
-                   "MIL", "MIN", "NOP", "NYK", "OKC", "ORL", "PHI", "PHX", "POR",
-                   "SAC", "SAS", "TOR", "UTA", "WAS")
-teams.pack()
 
+
+teams = OptionMenu(*(root, variable) + tuple(teamArray))
+teams.pack()
 
 variable2 = StringVar(root)
 variable2.set('Pick a Team')
-teams2 = OptionMenu(root, variable2, "ATL", "BKN", "BOS", "CHA", "CHI", "CLE", "DAL",
-                   "DEN", "DET", "GSW", "HOU", "IND", "LAC", "LAL", "MEM", "MIA",
-                   "MIL", "MIN", "NOP", "NYK", "OKC", "ORL", "PHI", "PHX", "POR",
-                   "SAC", "SAS", "TOR", "UTA", "WAS")
+teams2 = OptionMenu(*(root, variable2) + tuple(teamArray))
 teams2.pack()
-
 
 
 def ok():
@@ -37,6 +31,7 @@ def button_click():  # Manually inputting just to test
     # playersATL = OptionMenu(root, variableB, *players, command=print_it())
     playersMenu = OptionMenu(*(root, variableB) + tuple(players))
     playersMenu.pack()
+
 
 def button_click2():  # Manually inputting just to test
     players = get_team_roster(variable2.get())
