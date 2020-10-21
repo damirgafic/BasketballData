@@ -19,8 +19,7 @@ def ok():
     print("value is: " + variable.get())
 
 
-def print_it(event):
-    print(var.get())
+
 
 
 def button_click():  # Manually inputting just to test
