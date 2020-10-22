@@ -23,7 +23,7 @@ def get_player_suffix(name):
                                 page_name = h1.find('span').text
                                 if page_name.lower()==name.lower():
                                     return suffix
-
+'''
 f = open("PlayerNames2020.txt", "r+")
 players = f.read().splitlines()
 players = list(dict.fromkeys(players))
@@ -32,3 +32,4 @@ f.truncate()
 for i in range(len(players)):
     f.write(players[i] + '\n')
 f.close()
+'''

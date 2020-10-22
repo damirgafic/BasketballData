@@ -1,4 +1,5 @@
 import pandas as pd
+import requests
 from requests import get
 from bs4 import BeautifulSoup, Comment
 import re
@@ -37,11 +38,17 @@ def get_player_salary(name):  # retrieve player salary from 2019-2020 season
     r = get(f'https://www.basketball-reference.com{suffix}')
     if r.status_code == 200:
         soup = BeautifulSoup(r.content, 'html.parser')
-        table_div = soup.find('div', {'id': 'all_contract'})
-        comment = table_div.find(string=lambda text: isinstance(text, Comment))
+        try: #some players do not have .find
+            table_div = soup.find('div', {'id': 'all_contract'})
+            comment = table_div.find(string=lambda text: isinstance(text, Comment))
+        except AttributeError:
+            return 'N/A'
         soup2 = BeautifulSoup(comment, 'html.parser')
         salaries = (soup2.findAll('td'))
-        return cleanHtml(str(salaries[1]))
+        try:
+            return cleanHtml(str(salaries[1]))
+        except IndexError:
+            return 'No Contract'
     # test  print(cleanHtml(str(salaries[1])))
 
 
@@ -79,13 +86,17 @@ def scrape_data():  # function to scrape team rosters, player salaries, and play
     players = f.read().splitlines()
     print(players)
     for i in range(len(players)):
-        playersPer.append(get_player_per(players[i]))
-        print(playersPer[i])
-        time.sleep(10)
-    for i in range(len(players)):
-        salaries.append(get_player_salary(players[i]))
-        print(salaries[i])
-        time.sleep(10)
+        try:
+            playersPer.append(get_player_per(players[i]))
+            salaries.append(get_player_salary(players[i]))
+            print(i)
+            print(playersPer[i])
+            print(salaries[i])
+            time.sleep(3)
+        except requests.exceptions.ConnectionError:
+            playersPer.append('Name Error')
+            salaries.append('Name Error')
+            print(playersPer[i] + '\n' + salaries[i])
 
     f = open("BasketballData2020.txt", "x")
     for i in range(len(players)):
@@ -93,8 +104,16 @@ def scrape_data():  # function to scrape team rosters, player salaries, and play
     f.close()
     print(players)
 
-#scrape_data()
-get_player_per('Džanan Musa')
+scrape_data()
+
+
+
+
+
+
+
+#print(get_player_per('Wendell Carter'))
+
 
 # print(get_player_salary('Lebron James').replace(',','').replace('$',''))
 # print(get_player_per('Stephen Curry'))

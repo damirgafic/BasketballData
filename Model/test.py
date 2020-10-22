@@ -4,11 +4,30 @@ Things to be done:
 
 '''
 
-a = [['frreee', 'speace', 'race', 4], ['face', 6], [7, 8, 9]]
-print(a)
-players = []
-for i in range(len(a)):
-    for j in range(len(a[i])):
-        print(a[i][j])
 
-print(players)
+# Python program to demonstrate
+# AttributeError
+
+
+class Geeks():
+
+    def __init__(self):
+        self.a = 'GeeksforGeeks'
+
+
+# Driver's code
+obj = Geeks()
+
+# Try and except statement for
+# Exception handling
+try:
+    print(obj.a)
+
+    # Raises an AttributeError
+    print(obj.b)
+
+# Prints the below statement
+# whenever an AttributeError is
+# raised
+except AttributeError:
+    print("There is no such attribute")
