@@ -1,13 +1,9 @@
 import unicodedata
-
-import pandas as pd
-import requests
 from requests import get
 from bs4 import BeautifulSoup, Comment
 import re
-import time
 
-#from Model.basketball_stat_function_collector import get_player_suffix
+
 
 
 teamArray = ["ATL", "BRK", "BOS", "CHO", "CHI", "CLE", "DAL",
@@ -22,21 +18,23 @@ def get_player_suffix(name):
     for last_name in names:
         initial = last_name[0].lower()
         r = get(f'https://www.basketball-reference.com/players/{initial}')
-        if r.status_code==200:
+        if r.status_code == 200:
             soup = BeautifulSoup(r.content, 'html.parser')
             for table in soup.find_all('table', attrs={'id': 'players'}):
                 suffixes = []
                 for anchor in table.find_all('a'):
-                    if unicodedata.normalize('NFD', anchor.text).encode('ascii', 'ignore').decode("utf-8").lower() in normalized_name.lower():
+                    if unicodedata.normalize('NFD', anchor.text).encode('ascii', 'ignore').decode(
+                            "utf-8").lower() in normalized_name.lower():
                         suffix = anchor.attrs['href']
                         player_r = get(f'https://www.basketball-reference.com{suffix}')
-                        if player_r.status_code==200:
+                        if player_r.status_code == 200:
                             player_soup = BeautifulSoup(player_r.content, 'html.parser')
                             h1 = player_soup.find('h1', attrs={'itemprop': 'name'})
                             if h1:
                                 page_name = h1.find('span').text
-                                if page_name.lower()==name.lower():
+                                if page_name.lower() == name.lower():
                                     return suffix
+
 
 def cleanHtml(raw_html):
     cleanr = re.compile('<.*?>')
@@ -63,7 +61,7 @@ def get_player_salary(name):  # retrieve player salary from 2019-2020 season
     r = get(f'https://www.basketball-reference.com{suffix}')
     if r.status_code == 200:
         soup = BeautifulSoup(r.content, 'html.parser')
-        try: #some players do not have .find
+        try:  # some players do not have .find
             table_div = soup.find('div', {'id': 'all_contract'})
             comment = table_div.find(string=lambda text: isinstance(text, Comment))
         except AttributeError:
@@ -91,13 +89,6 @@ def get_team_roster(team):  # team variable uses team acronyms ex: GSW, LAL, etc
         names = player_names.splitlines()
         names.pop(0)  # removes first element which is a blank element
         return names
-
-
-
-
-
-
-
 
 
 # print(get_player_salary('Lebron James').replace(',','').replace('$',''))

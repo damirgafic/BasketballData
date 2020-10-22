@@ -15,9 +15,9 @@ Brandon Goodwin $522,738 11.6
 Treveon Graham $1,678,854 6.0
 Evan Turner $18,606,557 9.7
 Dewayne Dedmon $13,333,334 8.7
-Tyrone Wallace N/A 8.8
+Tyrone Wallace NoContract 3.9
 Chandler Parsons $25,102,511 10.1
-Charlie Brown No Contract 11.0
+Charlie Brown NoContract 11.0
 Paul Watson $50,752 17.3
 Joe Harris $7,670,000 12.7
 Spencer Dinwiddie $10,600,000 15.9
@@ -31,16 +31,16 @@ Rodions Kurucs $1,699,236 8.9
 Kyrie Irving $31,742,000 24.6
 Džanan Musa $1,911,600 9.4
 Theo Pinson $1,445,697 5.2
-Chris Chiozza No Contract 9.2
+Chris Chiozza NoContract 9.2
 David Nwaba $1,678,854 12.2
 Iman Shumpert $419,443 6.3
 Tyler Johnson $212,753 10.2
 Nicolas Claxton $898,310 14.8
 Justin Anderson $196,288 11.2
-Jeremiah Martin No Contract 21.8
+Jeremiah Martin NoContract 21.8
 Lance Thomas $262,152 6.6
 Donta Hall $101,504 17.2
-Henry Ellenson N/A 12.9
+Henry Ellenson NoContract -1.3
 Jamal Crawford $289,803 15.0
 Jayson Tatum $7,830,000 20.4
 Jaylen Brown $6,534,829 16.9
@@ -57,8 +57,8 @@ Robert Williams $1,937,520 23.1
 Romeo Langford $3,458,400 5.4
 Carsen Edwards $1,228,026 6.9
 Vincent Poirier $2,505,793 12.7
-Tremont Waters No Contract 4.3
-Tacko Fall No Contract 28.4
+Tremont Waters NoContract 4.3
+Tacko Fall NoContract 28.4
 Devonte' Graham $1,416,852 15.8
 Terry Rozier $19,894,737 12.8
 Miles Bridges $3,755,400 12.1
@@ -81,7 +81,7 @@ Coby White $5,307,120 11.9
 Thaddeus Young $12,900,000 13.3
 Lauri Markkanen $5,300,400 14.3
 Kris Dunn $5,348,007 13.1
-Wendell Carter Jr. $5,201,400 15.5
+Wendell CarterJr. $5,201,400 15.5
 Ryan Arcidiacono $3,000,000 9.0
 Daniel Gafford $898,310 16.2
 Luke Kornet $2,195,122 14.4
@@ -90,15 +90,15 @@ Denzel Valentine $3,377,569 13.0
 Shaquille Harrison $898,310 13.7
 Cristiano Felício $8,156,500 12.8
 Otto Porter $27,250,576 15.5
-Adam Mokoka No Contract 8.2
+Adam Mokoka NoContract 8.2
 Max Strus $415,414 30.7
 Collin Sexton $4,764,960 16.3
 Cedi Osman $2,907,143 10.7
 Darius Garland $6,400,920 8.5
 Kevin Love $28,900,000 23.2
 Tristan Thompson $18,539,130 16.8
-Larry Nance N/A 19.8
-Kevin Porter N/A 16.1
+Larry NanceJr. $12,727,273 17.3
+Kevin PorterJr. $1,290,960 10.8
 Matthew Dellavedova $9,607,500 10.1
 Jordan Clarkson $13,437,500 16.9
 Alfonzo McKinnie $1,361,046 8.7
@@ -109,12 +109,12 @@ Andre Drummond $27,093,019 22.1
 Ante Žižić $2,281,800 16.4
 Dean Wade $375,000 13.9
 Tyler Cook $101,504 23.9
-Matt Mooney No Contract 8.1
+Matt Mooney NoContract 8.1
 Malik Newman $50,752 -11.4
 Marques Bolden $50,752 19.8
-JP Macura Name Error Name Error
+J.P. Macura $81,678 0.0
 Dorian Finney-Smith $4,000,000 12.3
-Tim Hardaway N/A 14.2
+Tim HardawayJr. $18,150,000 14.5
 Luka Dončić $7,683,360 27.6
 Maxi Kleber $8,000,000 13.6
 Kristaps Porziņģis $27,285,000 18.3
@@ -123,15 +123,15 @@ Delon Wright $9,473,684 15.4
 Dwight Powell $10,259,375 18.0
 Justin Jackson $3,280,920 9.6
 Jalen Brunson $1,416,582 14.9
-JJ Barea Name Error Name Error
+J.J. Barea $2,564,753 14.6
 Boban Marjanović $3,500,000 25.7
 Courtney Lee $12,759,670 9.7
 Trey Burke $229,220 17.3
 Ryan Broekhoff $1,443,842 13.1
 Willie Cauley-Stein $2,177,483 16.2
-Michael KiddGilchrist Name Error Name Error
-Antonius Cleveland No Contract 4.1
-Josh Reaves No Contract 5.8
+Michael Kidd-Gilchrist $13,000,000 1.7
+Antonius Cleveland NoContract 4.1
+Josh Reaves NoContract 5.8
 Nikola Jokić $26,573,595 24.9
 Will Barton $12,960,000 15.3
 Jamal Murray $4,444,746 17.7
@@ -141,12 +141,12 @@ Monte Morris $1,588,231 14.9
 Paul Millsap $30,500,000 19.8
 Torrey Craig $2,100,000 10.8
 Mason Plumlee $14,041,096 18.4
-Michael Porter Name Error Name Error
+Michael PorterJr. $3,389,400 19.8
 Malik Beasley $2,731,714 12.4
 Juan Hernangómez $3,321,030 11.0
 PJ Dozier $183,115 16.0
-Keita BatesDiop Name Error Name Error
-Bol Bol No Contract 14.4
+Keita Bates-Diop $1,416,852 12.1
+Bol Bol NoContract 14.4
 Troy Daniels $481,000 7.4
 Vlatko Čančar $1,517,981 11.4
 Jarred Vanderbilt $1,416,852 10.4
@@ -165,12 +165,12 @@ Sekou Doumbouya $3,285,120 6.2
 Blake Griffin $34,234,964 22.6
 Reggie Jackson $17,286,956 14.6
 Tim Frazier $1,882,867 11.8
-Louis King No Contract 6.2
+Louis King NoContract 6.2
 Khyri Thomas $838,464 3.1
-Jordan Bone No Contract 0.8
+Jordan Bone NoContract 0.8
 Derrick Walton $1,445,697 11.2
 Eric Paschall $898,310 14.5
-Glenn Robinson N/A 15.0
+Glenn RobinsonIII $1,882,867 14.7
 Damion Lee $842,327 12.5
 Alec Burks $2,320,044 19.0
 Jordan Poole $1,964,760 7.2
@@ -181,7 +181,7 @@ Ky Bowman $350,189 9.1
 Omari Spellman $1,897,800 14.4
 Jacob Evans $1,925,880 4.9
 Andrew Wiggins $27,504,630 14.7
-Juan ToscanoAnderson Name Error Name Error
+Juan Toscano-Anderson $350,189 9.4
 Kevon Looney $4,464,286 9.4
 Mychal Mulder $187,782 7.8
 Dragan Bender $189,702 12.1
@@ -191,7 +191,7 @@ Jeremy Pargo $91,557 8.4
 Chasson Randle $91,557 17.7
 Zach Norvell $50,752 3.7
 James Harden $37,800,000 26.8
-PJ Tucker Name Error Name Error
+P.J. Tucker $8,349,039 8.3
 Russell Westbrook $38,178,000 23.7
 Danuel House $3,540,000 12.4
 Ben McLemore $2,028,594 11.8
@@ -206,28 +206,28 @@ Isaiah Hartenstein $1,416,852 18.6
 Tyson Chandler $2,564,753 11.2
 Gary Clark $708,426 9.8
 DeMarre Carroll $811,447 11.6
-Michael Frazier No Contract -0.9
+Michael Frazier NoContract -0.9
 Bruno Caboclo $1,845,301 7.9
-Luc Mbah a Moute $289,803 7.5
+Luc Mbah-a-Moute $289,803 7.5
 Ryan Anderson $500,000 4.6
 William Howard $50,000 -12.7
-TJ Warren Name Error Name Error
+T.J. Warren $10,810,000 18.4
 Domantas Sabonis $3,529,555 20.1
 Justin Holiday $4,767,000 4.7
 Myles Turner $18,000,000 14.8
 Malcolm Brogdon $20,000,000 15.7
 Aaron Holiday $2,239,200 11.6
 Doug McDermott $7,333,334 11.5
-TJ McConnell Name Error Name Error
+T.J. McConnell $3,500,000 16.5
 Jeremy Lamb $10,500,000 13.7
 Victor Oladipo $21,000,000 20.1
 Goga Bitadze $2,816,760 12.1
 JaKarr Sampson $1,737,145 13.9
 Edmond Sumner $2,000,000 10.1
-TJ Leaf Name Error Name Error
+T.J. Leaf $2,813,280 12.9
 Alize Johnson $1,416,852 13.3
-Naz MitrouLong Name Error Name Error
-Brian Bowen No Contract 0.1
+Naz Mitrou-Long NoContract 7.8
+Brian Bowen NoContract 0.1
 Lou Williams $8,000,000 19.9
 Kawhi Leonard $32,742,000 25.8
 Montrezl Harrell $6,000,000 23.6
@@ -242,10 +242,10 @@ Patrick Patterson $2,331,593 11.5
 Marcus Morris $15,000,000 16.5
 Jerome Robinson $3,567,720 5.8
 Terance Mann $1,000,000 10.6
-Amir Coffey No Contract 8.5
+Amir Coffey NoContract 8.5
 Mfiondu Kabengele $1,977,000 18.2
 Joakim Noah $289,803 18.6
-Johnathan Motley No Contract 20.9
+Johnathan Motley NoContract 20.9
 LeBron James $37,436,858 29.6
 Anthony Davis $27,093,019 27.4
 Kentavious Caldwell-Pope $8,089,282 11.7
@@ -261,12 +261,12 @@ Jared Dudley $2,564,753 7.8
 Dion Waiters $503,656 12.4
 Talen Horton-Tucker $898,310 12.3
 J.R. Smith $1,456,667 11.5
-Kostas Antetokounmpo No Contract 16.3
-Devontae Cacok No Contract 28.6
+Kostas Antetokounmpo NoContract 16.3
+Devontae Cacok NoContract 28.6
 Dillon Brooks $1,618,520 11.3
 Ja Morant $8,730,240 17.4
 Jonas Valančiūnas $16,000,000 19.7
-Jaren Jackson N/A 12.2
+Jaren Jackson $6,927,480 16.3
 Kyle Anderson $9,073,050 13.7
 Jae Crowder $7,815,533 11.0
 Brandon Clarke $2,478,840 20.9
@@ -278,8 +278,8 @@ Marko Guduric $2,625,000 8.8
 Josh Jackson $7,059,480 11.2
 Gorgui Dieng $16,229,213 16.2
 Anthony Tolliver $289,803 7.6
-John Konchar No Contract 18.0
-Yuta Watanabe No Contract 11.2
+John Konchar NoContract 18.0
+Yuta Watanabe NoContract 11.2
 Jordan Bell $250,000 14.1
 Jarrod Uthoff $81,678 -0.1
 Dusty Hannahs $81,678 21.3
@@ -289,18 +289,18 @@ Kendrick Nunn $1,416,852 12.9
 Jimmy Butler $32,742,000 23.6
 Goran Dragić $19,217,900 17.0
 Tyler Herro $3,640,200 12.5
-Derrick Jones Name Error Name Error
+Derrick JonesJr. $1,645,357 14.9
 Kelly Olynyk $11,667,885 15.7
 Meyers Leonard $11,286,515 12.3
 Andre Iguodala $17,185,185 15.2
 Justise Winslow $13,000,000 8.5
 Chris Silva $466,918 17.3
 James Johnson $15,349,400 18.5
-Gabe Vincent No Contract 1.2
+Gabe Vincent NoContract 1.2
 Udonis Haslem $2,564,753 6.5
 KZ Okpala $898,310 13.7
-Daryl Macon N/A 5.5
-Kyle Alexander No Contract 4.7
+Daryl Macon N/A -3.1
+Kyle Alexander NoContract 4.7
 Giannis Antetokounmpo $25,842,697 31.9
 Khris Middleton $30,603,448 16.4
 Brook Lopez $12,093,024 14.7
@@ -313,24 +313,24 @@ Ersan İlyasova $7,000,000 14.7
 Kyle Korver $2,564,753 13.2
 Robin Lopez $4,767,000 17.6
 Sterling Brown $1,618,520 9.5
-DJ Wilson Name Error Name Error
+D.J. Wilson $2,961,120 8.2
 Thanasis Antetokounmpo $1,445,697 12.2
-Frank Mason Name Error Name Error
+Frank MasonIII NoContract 16.9
 Josh Okogie $2,530,680 11.5
 Jarrett Culver $5,813,640 9.6
-KarlAnthony Towns Name Error Name Error
+Karl-Anthony Towns $27,250,000 26.5
 Shabazz Napier $1,882,867 13.9
 Keita Bates-Diop $1,416,852 11.2
-Jordan McLaughlin No Contract 16.3
+Jordan McLaughlin NoContract 16.3
 Jake Layman $3,581,986 11.5
-Kelan Martin No Contract 9.2
+Kelan Martin NoContract 9.2
 Naz Reid $898,310 15.3
 Jaylen Nowell $1,400,000 10.5
 Jrue Holiday $26,131,111 18.1
 Brandon Ingram $7,265,485 11.7
 Lonzo Ball $8,719,320 12.2
 Josh Hart $1,934,160 10.6
-JJ Redick Name Error Name Error
+J.J. Redick $13,486,300 15.4
 Derrick Favors $17,650,000 12.6
 Jaxson Hayes $4,862,040 17.6
 Nicolò Melli $3,902,439 11.4
@@ -340,9 +340,9 @@ Frank Jackson $1,618,520 9.1
 Zion Williamson $9,757,440 24.1
 Nickeil Alexander-Walker $2,964,840 8.9
 Jahlil Okafor $1,702,486 18.1
-Zylan Cheatham No Contract 6.7
+Zylan Cheatham NoContract 6.7
 Sindarius Thornwell $183,115 7.6
-Josh Gray No Contract 7.2
+Josh Gray NoContract 7.2
 Julius Randle $18,000,000 21.0
 RJ Barrett $7,839,960 10.7
 Mitchell Robinson $1,559,712 23.5
@@ -354,9 +354,9 @@ Taj Gibson $9,800,000 16.1
 Damyean Dotson $1,618,520 10.9
 Reggie Bullock $4,000,000 9.1
 Wayne Ellington $7,804,878 8.5
-Dennis Smith Name Error Name Error
+Dennis SmithJr. $4,463,640 7.4
 Allonzo Trier $3,551,100 14.5
-Kadeem Allen N/A 15.7
+Kadeem Allen N/A 14.0
 Ignas Brazdeikis $898,310 3.2
 Shai Gilgeous-Alexander $3,952,920 13.4
 Chris Paul $38,506,482 22.0
@@ -372,8 +372,8 @@ Luguentz Dort $155,647 7.6
 Mike Muscala $2,028,594 10.4
 Deonte Burton $1,416,852 4.3
 Andre Roberson $10,740,741 5.4
-Devon Hall No Contract 3.1
-Kevin Hervey No Contract 5.0
+Devon Hall NoContract 3.1
+Kevin Hervey NoContract 5.0
 Justin Patton $1,620,564 10.5
 Isaiah Roby $1,500,000 -7.7
 Evan Fournier $17,000,000 14.2
@@ -381,18 +381,18 @@ Aaron Gordon $19,863,636 15.1
 Nikola Vučević $28,000,000 20.8
 Markelle Fultz $9,745,200 14.3
 Terrence Ross $12,500,000 12.2
-DJ Augustin Name Error Name Error
+D.J. Augustin $7,250,000 14.0
 Jonathan Isaac $5,806,440 17.3
 Wesley Iwundu $1,618,520 10.3
 Khem Birch $3,000,000 11.7
-Mohamed Bamba Name Error Name Error
+Mo Bamba $5,697,600 17.5
 Michael Carter-Williams $2,028,594 9.9
 James Ennis $1,882,867 10.3
 Al-Farouq Aminu $9,258,000 14.4
 Melvin Frazier $1,416,852 9.8
-BJ Johnson Name Error Name Error
+B.J. Johnson NoContract 5.4
 Amile Jefferson $1,445,697 8.9
-Vic Law No Contract 3.7
+Vic Law NoContract 3.7
 Josh Magette $81,678 11.9
 Tobias Harris $31,034,483 18.0
 Al Horford $28,000,000 18.4
@@ -407,12 +407,12 @@ Raul Neto $1,737,145 11.1
 Kyle O'Quinn $2,028,594 16.8
 Norvel Pelle $350,189 10.5
 Zhaire Smith $3,058,800 1.1
-Marial Shayok No Contract 1.4
+Marial Shayok NoContract 1.4
 Jonah Bolden $1,698,450 12.4
 Devin Booker $27,250,000 20.6
 Mikal Bridges $4,161,000 12.9
 Ricky Rubio $16,190,476 14.7
-Kelly Oubre Name Error Name Error
+Kelly OubreJr. $15,625,000 14.9
 Dario Šarić $3,481,986 14.3
 Cameron Johnson $4,033,440 12.9
 Deandre Ayton $9,562,920 20.0
@@ -424,14 +424,14 @@ Cheick Diallo $1,678,854 17.3
 Ty Jerome $2,193,480 7.9
 Cameron Payne $196,288 15.3
 Jalen Lecque $898,310 2.7
-Tariq Owens No Contract 8.4
-Jared Harper No Contract -5.3
+Tariq Owens NoContract 8.4
+Jared Harper NoContract -5.3
 CJ McCollum $27,556,959 17.0
 Damian Lillard $29,802,321 26.9
 Hassan Whiteside $27,093,018 25.0
 Carmelo Anthony $2,159,029 12.4
 Anfernee Simons $2,149,560 9.0
-Gary Trent N/A 18.7
+Gary TrentJr. $1,416,852 12.9
 Kent Bazemore $19,269,662 12.6
 Mario Hezonja $1,737,145 10.8
 Trevor Ariza $12,200,000 10.5
@@ -442,8 +442,8 @@ Zach Collins $4,240,200 9.9
 Caleb Swanigan $2,033,160 6.8
 Jusuf Nurkić $12,000,000 21.3
 Wenyen Gabriel $898,310 10.3
-Jaylen Hoard No Contract 14.9
-Moses Brown No Contract 6.7
+Jaylen Hoard NoContract 14.9
+Moses Brown NoContract 6.7
 Harrison Barnes $24,147,727 15.4
 Buddy Hield $4,861,208 16.4
 Nemanja Bjelica $6,825,000 11.6
@@ -453,12 +453,12 @@ De'Aaron Fox $6,392,760 20.6
 Richaun Holmes $4,767,000 20.7
 Harry Giles $2,578,800 16.4
 Yogi Ferrell $3,150,000 12.3
-Marvin Bagley Name Error Name Error
+Marvin BagleyIII $8,556,120 15.6
 Justin James $898,310 11.0
-DaQuan Jeffries No Contract 11.2
+DaQuan Jeffries NoContract 11.2
 Corey Brewer $289,803 17.6
 Eric Mika $50,752 13.9
-Kyle Guy No Contract 6.6
+Kyle Guy NoContract 6.6
 DeMar DeRozan $27,739,975 17.7
 LaMarcus Aldridge $26,000,000 20.3
 Dejounte Murray $2,321,735 16.2
@@ -471,9 +471,9 @@ Jakob Poeltl $3,754,886 19.3
 Lonnie Walker $2,760,480 10.5
 Marco Belinelli $5,846,154 14.1
 Keldon Johnson $1,950,600 19.1
-Drew Eubanks No Contract 17.3
+Drew Eubanks NoContract 17.3
 Chimezie Metu $1,416,852 22.2
-Quinndary Weatherspoon No Contract 3.2
+Quinndary Weatherspoon NoContract 3.2
 Luka Šamanić $2,689,920 8.8
 Tyler Zeller $245,686 1.5
 Pascal Siakam $2,351,839 17.9
@@ -490,9 +490,9 @@ Chris Boucher $1,588,231 21.0
 Matt Thomas $898,310 13.3
 Malcolm Miller $1,588,231 6.7
 Stanley Johnson $3,623,000 9.9
-Oshae Brissett No Contract 6.7
+Oshae Brissett NoContract 6.7
 Dewan Hernandez $898,310 12.9
-Shamorie Ponds N/A 33.1
+Shamorie Ponds NoContract 33.1
 Donovan Mitchell $3,635,760 18.8
 Rudy Gobert $25,008,427 21.7
 Joe Ingles $11,954,546 12.6
@@ -506,13 +506,13 @@ Ed Davis $4,767,000 20.0
 Rayjon Tucker $578,573 9.7
 Juwan Morgan $746,054 10.1
 Miye Oni $898,310 9.7
-Jarrell Brantley No Contract 8.0
-Nigel WilliamsGoss Name Error Name Error
-Justin WrightForeman Name Error Name Error
+Jarrell Brantley NoContract 8.0
+Nigel Williams-Goss $1,500,000 8.1
+Justin Wright-Foreman NoContract 8.8
 Stanton Kidd $250,000 -13.7
 Bradley Beal $27,093,019 23.2
 Ish Smith $5,853,659 4.3
-Troy Brown Name Error Name Error
+Troy BrownJr. $3,219,480 13.7
 Dāvis Bertāns $7,000,000 13.3
 Rui Hachimura $4,469,160 13.5
 Isaac Bonga $1,416,852 10.2
@@ -521,10 +521,10 @@ Isaiah Thomas $2,320,044 12.3
 Moritz Wagner $2,063,520 15.1
 Ian Mahinmi $15,450,051 13.5
 Anžejs Pasečņiks $482,144 11.3
-Gary Payton N/A 15.1
+Gary PaytonJr. $1,090,781 11.3
 Admiral Schofield $898,310 6.1
-Garrison Mathews No Contract 13.1
+Garrison Mathews NoContract 13.1
 Johnathan Williams $106,181 15.1
-CJ Miles Name Error Name Error
+C.J. Miles $8,730,158 11.1
 Jerian Grant $196,288 10.8
 Justin Robinson $395,866 8.2
