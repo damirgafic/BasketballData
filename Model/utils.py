@@ -1,3 +1,5 @@
+import unicodedata
+
 import pandas as pd
 import requests
 from requests import get
@@ -5,13 +7,36 @@ from bs4 import BeautifulSoup, Comment
 import re
 import time
 
-from Model.basketballStats import get_player_suffix
+#from Model.basketball_stat_function_collector import get_player_suffix
+
 
 teamArray = ["ATL", "BRK", "BOS", "CHO", "CHI", "CLE", "DAL",
              "DEN", "DET", "GSW", "HOU", "IND", "LAC", "LAL", "MEM", "MIA",
              "MIL", "MIN", "NOP", "NYK", "OKC", "ORL", "PHI", "PHO", "POR",
              "SAC", "SAS", "TOR", "UTA", "WAS"]
 
+
+def get_player_suffix(name):
+    normalized_name = unicodedata.normalize('NFD', name).encode('ascii', 'ignore').decode("utf-8")
+    names = normalized_name.split(' ')[1:]
+    for last_name in names:
+        initial = last_name[0].lower()
+        r = get(f'https://www.basketball-reference.com/players/{initial}')
+        if r.status_code==200:
+            soup = BeautifulSoup(r.content, 'html.parser')
+            for table in soup.find_all('table', attrs={'id': 'players'}):
+                suffixes = []
+                for anchor in table.find_all('a'):
+                    if unicodedata.normalize('NFD', anchor.text).encode('ascii', 'ignore').decode("utf-8").lower() in normalized_name.lower():
+                        suffix = anchor.attrs['href']
+                        player_r = get(f'https://www.basketball-reference.com{suffix}')
+                        if player_r.status_code==200:
+                            player_soup = BeautifulSoup(player_r.content, 'html.parser')
+                            h1 = player_soup.find('h1', attrs={'itemprop': 'name'})
+                            if h1:
+                                page_name = h1.find('span').text
+                                if page_name.lower()==name.lower():
+                                    return suffix
 
 def cleanHtml(raw_html):
     cleanr = re.compile('<.*?>')
@@ -67,52 +92,12 @@ def get_team_roster(team):  # team variable uses team acronyms ex: GSW, LAL, etc
         names.pop(0)  # removes first element which is a blank element
         return names
 
-    # print(player_names)
-
-
-def scrape_data():  # function to scrape team rosters, player salaries, and player stats
-    # and to place this data into a file
-    # steps to scrape all this information
-    # 1) scrape team roster (I have function for this already)
-    # 2) scrape player salaries (have function already)
-    # 3) scrape each players PER stat (have function for this already)
-    # 3 arrays [players, salaries, playerPer] element numbers should match up with players
-    # read the arrays into file EX: Giannis Antetokounmpo 25,842,697 31.9
-    teams = []
-
-    playersPer = []
-    salaries = []
-    f = open("PlayerNames2020.txt", "r")
-    players = f.read().splitlines()
-    print(players)
-    for i in range(len(players)):
-        try:
-            playersPer.append(get_player_per(players[i]))
-            salaries.append(get_player_salary(players[i]))
-            print(i)
-            print(playersPer[i])
-            print(salaries[i])
-            time.sleep(3)
-        except requests.exceptions.ConnectionError:
-            playersPer.append('Name Error')
-            salaries.append('Name Error')
-            print(playersPer[i] + '\n' + salaries[i])
-
-    f = open("BasketballData2020.txt", "x")
-    for i in range(len(players)):
-        f.write(players[i] + ' ' + salaries[i] + ' ' + playersPer[i] + '\n')
-    f.close()
-    print(players)
-
-scrape_data()
 
 
 
 
 
 
-
-#print(get_player_per('Wendell Carter'))
 
 
 # print(get_player_salary('Lebron James').replace(',','').replace('$',''))
