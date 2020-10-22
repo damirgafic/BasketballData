@@ -1,9 +1,10 @@
-from basketball_reference_scraper.utils import get_player_suffix
 import pandas as pd
 from requests import get
 from bs4 import BeautifulSoup, Comment
 import re
 import time
+
+from Model.basketballStats import get_player_suffix
 
 teamArray = ["ATL", "BRK", "BOS", "CHO", "CHI", "CLE", "DAL",
              "DEN", "DET", "GSW", "HOU", "IND", "LAC", "LAL", "MEM", "MIA",
@@ -77,22 +78,23 @@ def scrape_data():  # function to scrape team rosters, player salaries, and play
     f = open("PlayerNames2020.txt", "r")
     players = f.read().splitlines()
     print(players)
-    '''for i in range(len(players)):
+    for i in range(len(players)):
         playersPer.append(get_player_per(players[i]))
         print(playersPer[i])
-        time.sleep(3)
+        time.sleep(10)
     for i in range(len(players)):
         salaries.append(get_player_salary(players[i]))
         print(salaries[i])
-        time.sleep(3)
+        time.sleep(10)
 
     f = open("BasketballData2020.txt", "x")
     for i in range(len(players)):
         f.write(players[i] + ' ' + salaries[i] + ' ' + playersPer[i] + '\n')
     f.close()
-    print(players)'''
+    print(players)
 
-scrape_data()
+#scrape_data()
+get_player_per('Džanan Musa')
 
 # print(get_player_salary('Lebron James').replace(',','').replace('$',''))
 # print(get_player_per('Stephen Curry'))
