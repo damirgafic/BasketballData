@@ -13,7 +13,6 @@ def get_player_suffix(name):
             for table in soup.find_all('table', attrs={'id': 'players'}):
                 suffixes = []
                 for anchor in table.find_all('a'):
-                    print(unicodedata.normalize('NFD', anchor.text).encode('ascii', 'ignore').decode("utf-8").lower())
                     if unicodedata.normalize('NFD', anchor.text).encode('ascii', 'ignore').decode("utf-8").lower() in normalized_name.lower():
                         suffix = anchor.attrs['href']
                         player_r = get(f'https://www.basketball-reference.com{suffix}')
@@ -25,4 +24,11 @@ def get_player_suffix(name):
                                 if page_name.lower()==name.lower():
                                     return suffix
 
-
+f = open("PlayerNames2020.txt", "r+")
+players = f.read().splitlines()
+players = list(dict.fromkeys(players))
+f.seek(0)
+f.truncate()
+for i in range(len(players)):
+    f.write(players[i] + '\n')
+f.close()
