@@ -71,18 +71,12 @@ def scrape_data():  # function to scrape team rosters, player salaries, and play
     # 3 arrays [players, salaries, playerPer] element numbers should match up with players
     # read the arrays into file EX: Giannis Antetokounmpo 25,842,697 31.9
     teams = []
-    players = []
+
     playersPer = []
     salaries = []
-    f = open("PlayerNames2020.txt", "x")
-    for i in range(len(teamArray)):
-        teams.append(get_team_roster(teamArray[i]))
-        print(teams[i])
-        time.sleep(3)
-    for i in range(len(teams)):
-        for j in range(len(teams[i])):
-            f.write(teams[i][j] + '\n')
-        f.close()
+    f = open("PlayerNames2020.txt", "r")
+    players = f.read().splitlines()
+    print(players)
     '''for i in range(len(players)):
         playersPer.append(get_player_per(players[i]))
         print(playersPer[i])
