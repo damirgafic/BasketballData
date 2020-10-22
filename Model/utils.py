@@ -5,9 +5,9 @@ from bs4 import BeautifulSoup, Comment
 import re
 import time
 
-teamArray = ["ATL", "BRK", "BOS", "CHA", "CHI", "CLE", "DAL",
+teamArray = ["ATL", "BRK", "BOS", "CHO", "CHI", "CLE", "DAL",
              "DEN", "DET", "GSW", "HOU", "IND", "LAC", "LAL", "MEM", "MIA",
-             "MIL", "MIN", "NOP", "NYK", "OKC", "ORL", "PHI", "PHX", "POR",
+             "MIL", "MIN", "NOP", "NYK", "OKC", "ORL", "PHI", "PHO", "POR",
              "SAC", "SAS", "TOR", "UTA", "WAS"]
 
 
@@ -74,24 +74,29 @@ def scrape_data():  # function to scrape team rosters, player salaries, and play
     players = []
     playersPer = []
     salaries = []
+    f = open("PlayerNames2020.txt", "x")
     for i in range(len(teamArray)):
         teams.append(get_team_roster(teamArray[i]))
+        print(teams[i])
         time.sleep(3)
-    for i in range(len(teamArray)):
+    for i in range(len(teams)):
         for j in range(len(teams[i])):
-            players.append(teams[i][j])
-    for i in range(len(players)):
+            f.write(teams[i][j] + '\n')
+        f.close()
+    '''for i in range(len(players)):
         playersPer.append(get_player_per(players[i]))
+        print(playersPer[i])
         time.sleep(3)
     for i in range(len(players)):
         salaries.append(get_player_salary(players[i]))
+        print(salaries[i])
         time.sleep(3)
 
     f = open("BasketballData2020.txt", "x")
-    for i in range(2):  # for i in range(len(players)):
+    for i in range(len(players)):
         f.write(players[i] + ' ' + salaries[i] + ' ' + playersPer[i] + '\n')
     f.close()
-    print(players)
+    print(players)'''
 
 scrape_data()
 
