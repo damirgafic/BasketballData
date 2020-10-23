@@ -251,7 +251,7 @@ Anthony Davis $27,093,019 27.4
 Kentavious Caldwell-Pope $8,089,282 11.7
 Danny Green $14,634,146 10.8
 Kyle Kuzma $1,974,600 12.2
-Dwight Howard $2,564,753 20.8
+Dwight Howard $5,603,850 20.8
 Avery Bradley $4,767,000 9.7
 Alex Caruso $2,750,000 10.8
 JaVale McGee $4,000,000 19.9
@@ -299,7 +299,7 @@ James Johnson $15,349,400 18.5
 Gabe Vincent NoContract 1.2
 Udonis Haslem $2,564,753 6.5
 KZ Okpala $898,310 13.7
-Daryl Macon N/A -3.1
+Daryl Macon NoContract -3.1
 Kyle Alexander NoContract 4.7
 Giannis Antetokounmpo $25,842,697 31.9
 Khris Middleton $30,603,448 16.4
@@ -356,7 +356,7 @@ Reggie Bullock $4,000,000 9.1
 Wayne Ellington $7,804,878 8.5
 Dennis SmithJr. $4,463,640 7.4
 Allonzo Trier $3,551,100 14.5
-Kadeem Allen N/A 14.0
+Kadeem Allen NoContract 14.0
 Ignas Brazdeikis $898,310 3.2
 Shai Gilgeous-Alexander $3,952,920 13.4
 Chris Paul $38,506,482 22.0
