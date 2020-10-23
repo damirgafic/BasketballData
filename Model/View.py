@@ -5,6 +5,26 @@ from Model.utils import get_team_roster, teamArray
 
 root = Tk()
 
+background_image = Tk.PhotoImage('nba.png')
+background_label = Tk.Label(root, image=background_image)
+background_label.place(x=0, y=0, relwidth=1, relheight=1)
+
+text = Label(root, text='enter a contract value to find the best player')
+text.pack()
+
+e = Entry(root)
+e.pack()
+e.focus_set()
+
+
+def callback():
+    print(e.get())
+
+
+b = Button(root, text="get", width=10, command=callback)
+b.pack()
+
+'''
 variable = StringVar(root)
 variable.set("Pick a Team")  # default value
 
@@ -44,5 +64,6 @@ def button_click2():  # Manually inputting just to test
 button = Button(root, text="OK", command=button_click)
 button.pack()
 button2 = Button(root, text="ok 2", command=button_click2)
-button2.pack()
+button2.pack()'''
+
 mainloop()
