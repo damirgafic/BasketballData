@@ -45,9 +45,9 @@ def findBest(players, value, greaterThan, salary):  # greaterThan: bool decides 
             pass
     max = len(sortRatings)-1
     if value:
-        return 'The best PER-Salary ratio belongs to ' + sortRatings[max].fName + ' ' + sortRatings[max].lastName
+        return 'The best PER-Salary ratio in this salary range belongs to ' + sortRatings[max].fName + ' ' + sortRatings[max].lastName
     else:
-        return 'The worst PER-Salary ratio belongs to ' + sortRatings[0].fName + ' ' + sortRatings[0].lastName
+        return 'The worst PER-Salary ratio in this salary range belongs to ' + sortRatings[0].fName + ' ' + sortRatings[0].lastName
 
 players = readFromFileToClass()
-print(findBest(players, True, True, 20000000))
+#print(findBest(players, False, False, 50000))
