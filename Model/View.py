@@ -17,20 +17,24 @@ def resize_image(event):
 
 def showStat():
     # print(findBest(players, True, True, int(e.get())))
-
-    num = int(e.get().replace('$', '').replace(',', ''))
-    if num < 51000:  # no players return if value is under 51,000
-        num = 51000
-    if num > 41000000:
-        num = 40000000  # no players return if value is over 41,000,000
-    if checkVar1.get() and checkVar2.get():
-        Label(center_frame, text=findBest(players, True, True, num)).pack()
-    elif checkVar1.get() and not checkVar2.get():
-        Label(center_frame, text=findBest(players, True, False, num)).pack()
-    elif not checkVar1.get() and checkVar2.get():
-        Label(center_frame, text=findBest(players, False, True, num)).pack()
-    else:
-        Label(center_frame, text=findBest(players, False, False, num)).pack()
+    try:
+        num = int(e.get().replace('$', '').replace(',', ''))
+        if num < 51000:  # no players return if value is under 51,000
+            num = 51000
+        if num > 41000000:
+            num = 40000000  # no players return if value is over 41,000,000
+        if checkVar1.get() and checkVar2.get():
+            Label(center_frame, text=findBest(players, True, True, num)).pack()
+        elif checkVar1.get() and not checkVar2.get():
+            Label(center_frame, text=findBest(players, True, False, num)).pack()
+        elif not checkVar1.get() and checkVar2.get():
+            Label(center_frame, text=findBest(players, False, True, num)).pack()
+        else:
+            Label(center_frame, text=findBest(players, False, False, num)).pack()
+    except ValueError:
+        newWindow = Tk()
+        newWindow.title('ValueError')
+        Label(newWindow, text='Enter a Valid Number. Example: $25,632,400', bg='red').pack()
 
 
 root = Tk()
