@@ -16,7 +16,7 @@ def resize_image(event):
 
 def showStat():
     #print(findBest(players, True, True, int(e.get())))
-   num = int(e.get())
+   num = int(e.get().replace('$','').replace(',',''))
    l = Label(center_frame, text=findBest(players, True, True, num)).pack()
 
 root = Tk()
