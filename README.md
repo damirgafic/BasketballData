@@ -9,8 +9,8 @@ I started building this application by first scraping data off www.basketball-re
 that went through all 30 NBA team rosters. I then had a list of players from each team, but I discovered I had 
 duplicates as well. Those duplicates were from players that played for more than one team during the 2019-2020 NBA 
 season. To solve this issue, I created a function to delete duplicates. Then I created a function to scrape an individual 
-player's statistics by visiting their webpage. During this process I noticed one of the players url was showing they were 
-under the /p/ index on the players table but he was actually under another letter. I found this bizarre and emailed the 
+player's statistics by visiting their webpage. During this process I noticed one of the players URL was showing they were 
+under the /p/ index on the players table, but this player was actually under another letter by mistake. I found this bizarre and emailed the 
 website team to address this issue. 
 
 While the scraper traversed through the players, I did have some errors, such as players that did not have a contract during the season. 
