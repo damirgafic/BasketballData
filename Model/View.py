@@ -14,10 +14,19 @@ def resize_image(event):
     label.config(image=photo)
     label.image = photo  # avoid garbage collection
 
+
 def showStat():
-    #print(findBest(players, True, True, int(e.get())))
-   num = int(e.get().replace('$','').replace(',',''))
-   l = Label(center_frame, text=findBest(players, True, True, num)).pack()
+    # print(findBest(players, True, True, int(e.get())))
+    num = int(e.get().replace('$', '').replace(',', ''))
+    if checkVar1.get() and checkVar2.get():
+        Label(center_frame, text=findBest(players, True, True, num)).pack()
+    elif checkVar1.get() and not checkVar2.get():
+        Label(center_frame, text=findBest(players, True, False, num)).pack()
+    elif not checkVar1.get() and checkVar2.get():
+        Label(center_frame, text=findBest(players, False, True, num)).pack()
+    else:
+        Label(center_frame, text=findBest(players, False, False, num)).pack()
+
 
 root = Tk()
 root.title("Title")
@@ -39,10 +48,18 @@ center_frame.place(relx=0.5, rely=0.5, anchor=CENTER)
 
 Label(center_frame, text='Enter a minimum salary cap in dollars', width=30).pack()
 e = Entry(center_frame, width=20)
-
 e.pack()
 
-Button(center_frame, width=20, text='Enter', command=showStat).pack()
+checkVar1 = BooleanVar()
+checkBut1 = Checkbutton(center_frame, text='Best', variable=checkVar1, onvalue=True, offvalue=False)
+checkBut1.pack()
 
+checkVar2 = BooleanVar()
+checkBut2 = Checkbutton(center_frame, text="Greater than Salary Cap", variable=checkVar2, onvalue=True, offvalue=False)
+checkBut2.pack()
+
+
+
+Button(center_frame, width=20, text='Enter', command=showStat).pack()
 
 root.mainloop()
