@@ -41,5 +41,5 @@ python View.py
 * **Damir Gafic** - [DamirGafic](https://github.com/DamirGafic)
 
 ## Acknowledgments
-* Thanks to www.basketball-reference.com for the great exstensive library of NBA statistics
+* Thanks to www.basketball-reference.com for the great extensive library of NBA statistics
 * And a big thank you to the team at www.basketball-reference.com for fixing the error I mentioned
