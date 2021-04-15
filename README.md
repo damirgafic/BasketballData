@@ -14,7 +14,7 @@ under the /p/ index on the players table, but this player was actually under ano
 website team to address this issue. 
 
 While the scraper traversed through the players, I did have some errors, such as players that did not have a contract during the season. 
-To solve this, I wrote try and catch blocks to identify those players. And in the end I decided not to count those players in my analysis.
+To solve this, I wrote try and catch blocks to identify those players. And in the end I decided not to count those players in my analysis since they did not have enough data for it to be included.
 I created a function to store the player names and statistics in a file, so I wouldn’t need to scrape the website each time
 the program was run. Once I had everything in a .txt file, I started working on transferring the data from the file to a 
 class object in the program. I wrote a binary tree to sort the data for the players, but I decided eventually python's built 
